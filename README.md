@@ -66,7 +66,7 @@
 
 Install OpenCV
 ```
-pip install --upgrade pip
+pip install opencv-python
 ```
 
 - Documentation
