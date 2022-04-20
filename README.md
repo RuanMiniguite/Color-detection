@@ -46,7 +46,7 @@
 ## About the project
 
 <div align="center">
-  <img src="/assets/Gif.gif" alt="Print" width=70% ><br><br>
+  <img src="/assets/GifRgb.gif" alt="Print" width=70% ><br><br>
 </div>
 
 
