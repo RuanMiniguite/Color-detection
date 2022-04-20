@@ -4,7 +4,7 @@ import cv2
 import numpy as np
   
 # Read the images
-img = cv2.imread("Rgb.jpg")
+img = cv2.imread("rgb.png")
   
 # Resizing the image
 image = cv2.resize(img, (660, 660))
@@ -12,17 +12,21 @@ image = cv2.resize(img, (660, 660))
 # Convert Image to Image HSV
 hsv = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 
+r = 0
+g = 60
+b = 120
+
 # HSV values RED
-lower_Red   = np.array([0, 100, 100])
-upper_Red   = np.array([55, 255, 255])
+lower_Red   = np.array([r - 10, 100, 100])
+upper_Red   = np.array([r + 10, 255, 255])
 
 # HSV values GREEN
-lower_Green = np.array([50, 100, 100])
-upper_Green = np.array([70, 255, 255])
+lower_Green = np.array([g - 10, 100, 100])
+upper_Green = np.array([g + 10, 255, 255])
 
 # HSV values BLUE
-lower_Blue  = np.array([100, 100, 100])
-upper_Blue  = np.array([140, 255, 255])
+lower_Blue  = np.array([b - 10, 100, 100])
+upper_Blue  = np.array([b + 10, 255, 255])
 
 Red    = cv2.inRange(hsv, lower_Red, upper_Red)
 Green  = cv2.inRange(hsv, lower_Green, upper_Green)
@@ -51,6 +55,6 @@ cv2.imshow("Image", image)
 cv2.imshow("Red",   Red)
 cv2.imshow("Green", Green)
 cv2.imshow("Blue",  Blue)
-  
+
 # Make python sleep for unlimited time
 cv2.waitKey(0)
