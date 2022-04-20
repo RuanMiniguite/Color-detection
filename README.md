@@ -5,7 +5,7 @@
 
 <!-- ============== HEADER ============== -->
 <div align="center" id="header">
-  <a href="https://github.com/RuanMiniguite"><img src="assets/img1.png" alt="Logo" width="110"></a>
+  <a href="https://github.com/RuanMiniguite"><img src="rgb.png" alt="Logo" width="110"></a>
   
   <h3>Color Detection</h3>
 </div>
